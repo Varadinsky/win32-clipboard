@@ -7,10 +7,15 @@ unless ($^O eq "MSWin32" || $^O eq "cygwin") {
     die "OS unsupported\n";
 }
 
+
+
 my %param = (
     NAME         => 'Win32::Clipboard',
     VERSION_FROM => 'Clipboard.pm',
     XS           => { 'Clipboard.xs' => 'Clipboard.cpp' },
+    test_requires => {
+           'Test::More' => 0,
+       }
 );
 $param{NO_META} = 1 if eval "$ExtUtils::MakeMaker::VERSION" >= 6.10_03;
 WriteMakefile(%param);
