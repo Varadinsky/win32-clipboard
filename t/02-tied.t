@@ -1,10 +1,7 @@
 use strict;
 use warnings;
-use Test::More;
-
+use Test::More tests => 3;
 use Win32::Clipboard;
-
-plan tests => 3;
 
 my $clip;
 
