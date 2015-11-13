@@ -1,6 +1,6 @@
 use strict;
 use warnings;
-use Test::More plan tests => 1;
+use Test::More tests => 1;
 use Win32::Clipboard;
 # This is a test case for bug in:
 # https://rt.cpan.org/Public/Bug/Display.html?id=43841
